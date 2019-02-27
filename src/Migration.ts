@@ -3,7 +3,7 @@ import { MissingDownQueryError } from './errors'
 
 export class Migration {
   protected upQueryFile: QueryFile
-  protected downQueryFile: QueryFile | null = null
+  protected downQueryFile: QueryFile | null = null;
   constructor(
     public name: string,
     protected schema: string,
